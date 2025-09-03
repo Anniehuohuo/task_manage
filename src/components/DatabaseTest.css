@@ -1,0 +1,307 @@
+/* 数据库测试组件样式 */
+
+.database-test {
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.test-header {
+  text-align: center;
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+  border-bottom: 2px solid #e9ecef;
+}
+
+.test-header h2 {
+  color: #2c3e50;
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.test-header p {
+  color: #6c757d;
+  font-size: 16px;
+}
+
+.test-actions {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.test-btn {
+  background: linear-gradient(135deg, #007bff 0%, #0056b3 100%);
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 123, 255, 0.3);
+}
+
+.test-btn:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 123, 255, 0.4);
+}
+
+.test-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
+}
+
+/* 测试结果样式 */
+.test-result {
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 30px;
+  border: 1px solid;
+}
+
+.test-result.success {
+  background-color: #d4edda;
+  border-color: #c3e6cb;
+  color: #155724;
+}
+
+.test-result.error {
+  background-color: #f8d7da;
+  border-color: #f5c6cb;
+  color: #721c24;
+}
+
+.test-result h3 {
+  margin-bottom: 15px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.result-details {
+  margin-top: 15px;
+}
+
+.result-details h4 {
+  margin-bottom: 10px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.result-details pre {
+  background-color: rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  border-radius: 4px;
+  font-size: 12px;
+  overflow-x: auto;
+  white-space: pre-wrap;
+}
+
+.troubleshooting {
+  margin-top: 15px;
+}
+
+.troubleshooting h4 {
+  margin-bottom: 10px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.troubleshooting ul {
+  margin-left: 20px;
+}
+
+.troubleshooting li {
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+
+/* 使用说明样式 */
+.test-instructions {
+  background-color: #f8f9fa;
+  padding: 25px;
+  border-radius: 8px;
+  margin-bottom: 30px;
+  border: 1px solid #dee2e6;
+}
+
+.test-instructions h3 {
+  color: #2c3e50;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.instruction-steps {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.step {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+}
+
+.step-number {
+  background: linear-gradient(135deg, #007bff 0%, #0056b3 100%);
+  color: white;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 14px;
+  flex-shrink: 0;
+}
+
+.step-content {
+  flex: 1;
+}
+
+.step-content h4 {
+  color: #2c3e50;
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.step-content p {
+  color: #6c757d;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.step-content code {
+  background-color: #e9ecef;
+  padding: 2px 6px;
+  border-radius: 3px;
+  font-family: 'Courier New', monospace;
+  font-size: 13px;
+  color: #e83e8c;
+}
+
+/* 配置信息样式 */
+.config-info {
+  background-color: #e9ecef;
+  padding: 20px;
+  border-radius: 8px;
+  border: 1px solid #ced4da;
+}
+
+.config-info h3 {
+  color: #2c3e50;
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.config-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid #ced4da;
+}
+
+.config-item:last-child {
+  border-bottom: none;
+}
+
+.config-label {
+  font-weight: 500;
+  color: #495057;
+  font-size: 14px;
+}
+
+.config-value {
+  font-family: 'Courier New', monospace;
+  font-size: 13px;
+  color: #6c757d;
+  background-color: #f8f9fa;
+  padding: 4px 8px;
+  border-radius: 4px;
+  max-width: 300px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+  .database-test {
+    padding: 15px;
+  }
+  
+  .test-header h2 {
+    font-size: 24px;
+  }
+  
+  .test-btn {
+    width: 100%;
+    padding: 12px 20px;
+    font-size: 14px;
+  }
+  
+  .test-instructions,
+  .config-info {
+    padding: 20px;
+  }
+  
+  .step {
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .step-number {
+    align-self: flex-start;
+  }
+  
+  .config-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+  }
+  
+  .config-value {
+    max-width: 100%;
+    word-break: break-all;
+  }
+}
+
+@media (max-width: 480px) {
+  .database-test {
+    padding: 10px;
+  }
+  
+  .test-header {
+    margin-bottom: 20px;
+  }
+  
+  .test-header h2 {
+    font-size: 20px;
+  }
+  
+  .test-header p {
+    font-size: 14px;
+  }
+  
+  .test-instructions,
+  .config-info {
+    padding: 15px;
+  }
+  
+  .step-content h4 {
+    font-size: 14px;
+  }
+  
+  .step-content p {
+    font-size: 13px;
+  }
+}
